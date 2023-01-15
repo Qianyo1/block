@@ -1,4 +1,6 @@
 -- block lock
+hookfunction(game.Players.LocalPlayer.IsInGroup, function() return true end)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Nosssa/NossLock/main/AntiAimViewer"))()
 local RunService = game:GetService("RunService")
 RunService.Heartbeat:Connect(function()
     pcall(function()
@@ -44,7 +46,7 @@ end
 end
 if v ~= game:GetService("Players").LocalPlayer then
 if v.Character.BodyEffects:FindFirstChild("K.O").Value == false then 
-v.Character.HumanoidRootPart.Size = Vector3.new(3.6, 4, 3)
+v.Character.HumanoidRootPart.Size = Vector3.new(3.6, 3, 3)
 --                                             (xxx, xx, x)
 --                                              xxx = Left, Right
 --                                              xx = Tall
