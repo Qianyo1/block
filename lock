@@ -46,7 +46,7 @@ end
 end
 if v ~= game:GetService("Players").LocalPlayer then
 if v.Character.BodyEffects:FindFirstChild("K.O").Value == false then 
-v.Character.HumanoidRootPart.Size = Vector3.new(3.6, 3, 3)
+v.Character.HumanoidRootPart.Size = Vector3.new(3.6, 4, 3)
 --                                             (xxx, xx, x)
 --                                              xxx = Left, Right
 --                                              xx = Tall
