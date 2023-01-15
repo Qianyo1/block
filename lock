@@ -11,7 +11,7 @@ RunService.Heartbeat:Connect(function()
         end
     end)
 end)
-_G.PART = "HumanoidRootPart"
+_G.PART = {"HumanoidRootPart", "LowerTorso"}
 _G.PRED = 0.13960 -- dk prediction- 
 _G.T = 1
 local lp = game:GetService("Players").LocalPlayer
