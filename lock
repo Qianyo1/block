@@ -13,8 +13,8 @@ RunService.Heartbeat:Connect(function()
         end
     end)
 end)
-_G.PART = {"HumanoidRootPart", "LowerTorso"}
-_G.PRED = 0.13960 -- dk prediction- 
+_G.PART = "HumanoidRootPart"
+_G.PRED = 0.14 -- dk prediction- 
 _G.T = 1
 local lp = game:GetService("Players").LocalPlayer
 local mouse = lp:GetMouse()
@@ -46,7 +46,7 @@ end
 end
 if v ~= game:GetService("Players").LocalPlayer then
 if v.Character.BodyEffects:FindFirstChild("K.O").Value == false then 
-v.Character.HumanoidRootPart.Size = Vector3.new(4, 4, 3)
+v.Character.HumanoidRootPart.Size = Vector3.new(4, 4, 1)
 --                                             (xxx, xx, x)
 --                                              xxx = Left, Right
 --                                              xx = Tall
